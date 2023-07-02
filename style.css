@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&family=Oxygen:wght@700&family=Poppins:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Martel Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------login part start----------- */
+
+.login {
+    height: 32pc;
+    width: 26pc;
+    background-color: rgba(238, 220, 242, 0.5);
+    margin: 5pc auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border: 2px solid rgb(197, 110, 110);
+    color: rgb(13, 13, 14);
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ----define size for smaller screen---------- */
+
+@media  screen and (max-width:768px) {
+    .login{
+        height: auto;
+        width: 50%;
+        margin:20% 20%;
+    }
+    
+}
+
+
+/* -------login component's------------ */
+
+.login h1 {
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.login label,
+.login input {
+    margin: 2px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+
+}
+
+.login input {
+    width: 95%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    outline: none;
+}
+
+/* -----login end----------- */
+
+
+
+/* -------button-------- */
+
+body button {
+    width: 100%;
+    height: 40px;
+    font-size: 19px;
+    font-weight: 600;
+    background-color: rgb(99, 56, 56);
+    outline: 1px;
+    border: 2px double black;
+    border-radius: 20px;
+    color: rgb(212, 185, 185);
+}
+
+body button:hover {
+    color: rgb(195, 123, 29);
+    background-color: rgb(71, 40, 40);
+}
+
+/* -----button end------------ */
+
+/* ------animation part for main theme------- */
+
+#video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+/* -------animation-end---------------- */

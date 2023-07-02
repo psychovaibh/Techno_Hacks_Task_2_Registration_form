@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Page | Techno_Hacks_Task_1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="animated-bg">
+            <video src="/yt2.mp4" autoplay loop muted id="video"></video>
+            <form class="reg_form" id="form">
+                <div class="login">
+                    <h1>Registration</h1>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <br>
+                    <label for="password">Password</label>
+                    <input onchange="checkPasswords()" type="password" name="password" id="password" required minlength="6" >
+                    <br>
+                    <label for="conf_password">Confirm Password</label>
+                    <input onchange="checkPasswords()" type="password" name="conf_password" id="conf_password" required>
+                    <br>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
